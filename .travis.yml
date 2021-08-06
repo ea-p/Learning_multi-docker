@@ -4,7 +4,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t eapriala/learning_multi-docker_clientTest -f ./client/Dockerfile.dev ./client 
+  - docker build -t eapriala/learning_multi-docker_clienttest -f ./client/Dockerfile.dev ./client 
 
 script:
   - docker run -e CI=true eapriala/learning_multi-docker_client npm run test -- --coverage
